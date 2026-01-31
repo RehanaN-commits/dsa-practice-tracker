@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 720px;
+    margin: auto;
+    background: linear-gradient(180deg, #f7f8ff, #eef1ff);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+
+.stats {
+    background: #f1f3ff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+
+.progress-bar {
+    width: 100%;
+    height: 12px;
+    background: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 8px;
+}
+
+#progress-fill {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #43cea2, #185a9d);
+    transition: width 0.3s ease;
+}
+
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.filters button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    background: #667eea;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.filters button:hover {
+    background: #5563d6;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    background: #f9f9f9;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+
+.tag {
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-left: 10px;
+    color: white;
+}
+
+.easy {
+    background: #28a745;
+}
+
+.medium {
+    background: #ffc107;
+    color: #333;
+}
+
+.hard {
+    background: #dc3545;
+}
+
+
+.easy { background: #d4edda; }
+.medium { background: #fff3cd; }
+.hard { background: #f8d7da; }
+
+button {
+    padding: 6px 14px;
+    border: none;
+    border-radius: 6px;
+    background: #43cea2;
+    color: white;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+button:hover {
+    background: #36b08c;
+}
+.add-problem {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.add-problem input,
+.add-problem select {
+    flex: 1;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}

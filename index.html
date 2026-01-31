@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DSA Practice Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>DSA Practice Tracker</h1>
+
+        <div class="stats">
+            <p id="progress-text">Solved: 0 / 0</p>
+            <div class="progress-bar">
+                <div id="progress-fill"></div>
+            </div>
+        </div>
+
+        <div class="filters">
+            <button onclick="setFilter('all')">All</button>
+            <button onclick="setFilter('solved')">Solved</button>
+            <button onclick="setFilter('unsolved')">Unsolved</button>
+        </div>
+<div class="add-problem">
+    <input id="problem-name" type="text" placeholder="Problem name">
+    <select id="problem-difficulty">
+        <option value="Easy">Easy</option>
+        <option value="Medium">Medium</option>
+        <option value="Hard">Hard</option>
+    </select>
+    <button onclick="addProblem()">Add Problem</button>
+</div>
+
+        <ul id="problem-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
